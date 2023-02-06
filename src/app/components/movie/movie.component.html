@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="blocHorizontal">
+    <ng-container *ngFor="let popularMovie of popularMovies">
+      <img
+        src="http://image.tmdb.org/t/p/original{{popularMovie.poster_path}}?api_key=9a441632bef8878cfc1db25ff66aa809"
+        alt=""
+        width="3.5%"
+        class="moviesAlign"
+      />
+    </ng-container>
+  </div>
+</div>
