@@ -1,3 +1,5 @@
+<div class="tam">
+  <div class="categoryTitle">Populares</div>
 <div class="container">
   <div class="blocHorizontal">
     <ng-container *ngFor="let popularMovie of popularMovies">
@@ -10,3 +12,38 @@
     </ng-container>
   </div>
 </div>
+</div>
+
+<div class="tam">
+  <div class="categoryTitle">Favoritos do Público</div>
+  <div class="container">
+    <div class="blocHorizontal">
+      <ng-container *ngFor="let topMovie of topMovies">
+        <img
+          src="http://image.tmdb.org/t/p/original{{topMovie.poster_path}}?api_key=9a441632bef8878cfc1db25ff66aa809"
+          width="3.5%"
+          class="moviesAlign"
+
+        />
+      </ng-container>
+    </div>
+  </div>
+</div>
+
+<div class="tam">
+  <div class="categoryTitle">Em Breve nos Cinemas</div>
+  <div class="container">
+    <div class="blocHorizontal">
+      <ng-container *ngFor="let nextMovie of nextMovies">
+        <img
+          src="http://image.tmdb.org/t/p/original{{nextMovie.poster_path}}?api_key=9a441632bef8878cfc1db25ff66aa809"
+          alt=""
+          width="3.5%"
+          class="moviesAlign"
+        />
+      </ng-container>
+    </div>
+  </div>
+</div>
+
+

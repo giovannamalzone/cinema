@@ -6,10 +6,28 @@ import { MovieComponent } from './components/movie/movie.component';
 import { MoviesService } from './services/movies.service';
 import { HttpClientModule } from '@angular/common/http';
 import { InicialMovieComponent } from './components/inicial-movie/inicial-movie.component';
+import { SearchComponent } from './components/search/search.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ResultSearchComponent } from './pages/result-search/result-search.component';
+import { MovieDescriptionComponent } from './pages/movie-description/movie-description.component';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
-  declarations: [AppComponent, MovieComponent, InicialMovieComponent],
-  imports: [BrowserModule, MatMenuModule, HttpClientModule],
+  declarations: [
+    AppComponent,
+    MovieComponent,
+    InicialMovieComponent,
+    SearchComponent,
+    ResultSearchComponent,
+    MovieDescriptionComponent,
+    HomeComponent,
+  ],
+  imports: [
+    BrowserModule,
+    MatMenuModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+  ],
   providers: [MoviesService],
   bootstrap: [AppComponent],
 })

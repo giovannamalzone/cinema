@@ -1,7 +1,8 @@
 .container {
   width: 100%;
-  height: 800px;
-  background: url("https://observatoriodocinema.uol.com.br/wp-content/uploads/2020/10/man-an-actor-james-bond-daniel-craig-007-costume-dark-background-clock.jpg");
+  height: 750px;
+  background: url("http://image.tmdb.org/t/p/original/xDMIl84Qo5Tsu62c9DGWhmPI67A.jpg?api_key=9a441632bef8878cfc1db25ff66aa809");
+  background-size: cover;
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
   //position: absolute;
 }
@@ -23,12 +24,12 @@
   margin-top: 60px;
 }
 
-.movieTitle{
+.movieTitle {
   font-size: 80px;
   font-weight: 600;
 }
 
-.descriptionMovie{
+.descriptionMovie {
   font-size: 50px;
   font-weight: 500;
 }

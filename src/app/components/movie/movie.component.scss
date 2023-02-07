@@ -1,5 +1,5 @@
-.moviesAlign{
- padding: 20px;
+.moviesAlign {
+  padding: 20px;
 }
 
 .blocHorizontal {
@@ -8,6 +8,7 @@
   width: 400vw;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
+  margin-bottom: 20px;
 }
 
 .container {
@@ -22,3 +23,18 @@
   display: none;
 }
 
+.categoryTitle {
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 30px;
+  padding: 20px;
+}
+
+.tam {
+  height: 450px;
+}
+
+.tamm{
+  height: 150px;
+}

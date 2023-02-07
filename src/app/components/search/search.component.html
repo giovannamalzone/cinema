@@ -1,0 +1,20 @@
+<div>
+  <form [formGroup]="searchForm" (ngSubmit)="submitForm()">
+    <input
+      type="text"
+      placeholder="Busca"
+      name="autor"
+      class="inputSearch"
+      style="background-color: white"
+      formControlName="movieName"
+    />
+  </form>
+
+  <div *ngFor="let searchResult of searchResults">
+    <img
+      src="http://image.tmdb.org/t/p/original{{
+        searchResult.poster_path
+      }}?api_key=9a441632bef8878cfc1db25ff66aa809"
+    />
+  </div>
+</div>
