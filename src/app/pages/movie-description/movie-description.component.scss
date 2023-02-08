@@ -1,0 +1,130 @@
+:host {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(13, 7, 69);
+}
+
+.toolbar img {
+  margin: 0 16px;
+}
+
+.card-container {
+  display: flex;
+  //flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.card {
+  all: unset;
+  border-radius: 4px;
+  //border: 1px solid #eee;
+  color: #eee;
+  font-weight: 600;
+  font-size: medium;
+  background-color: rgb(13, 7, 69);
+  height: 20px;
+  width: 150px;
+  margin: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  line-height: 24px;
+}
+
+.card-container .card:not(.highlight-card) {
+  cursor: pointer;
+}
+
+.card-container .card:not(.highlight-card):hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+}
+
+.column {
+  float: left;
+}
+
+.left {
+  width: 65%;
+  background: green;
+  margin-left: 20px;
+  margin-top: 0px;
+}
+
+.right {
+  width: 35%;
+  background: rgb(128, 0, 117);
+
+}
+
+.container {
+  height: 100%;
+  text-align: center;
+  margin: 20px;
+  margin-top: 70px;
+  height: 850px;
+}
+
+.imageMovie {
+  margin-top: 20px;
+  width:85%;
+}
+
+.movieDescription {
+  text-align: justify;
+}
+
+h1 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: white;
+}
+
+span {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 20px;
+  color: white;
+  margin-left: 5px;
+}
+
+.rowPrincipal{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.row{
+  display: flex;
+  align-items: center;
+  padding-right: 25px;
+}
+
+.artistImage{
+ width: 10%;
+ padding-right: 10px;
+ padding-bottom: 10px;
+}
+
+
