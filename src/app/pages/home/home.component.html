@@ -1,5 +1,5 @@
-<!-- <div class="toolbar" role="banner">
-  <img width="160" src="assets/icons/11.png" />
+<div class="toolbar" role="banner">
+  <img width="160" src="assets/icons/11.png"/>
   <div class="spacer"></div>
   <div>
     <app-search></app-search>
@@ -10,8 +10,10 @@
 
 <div class="content" role="main">
   <div class="card-container">
-    <div class="card" routerLink="app-movies-page">
-      <span>FILMES</span>
+    <div class="card">
+      <a routerLink="movie">
+        <span>FILMES</span>
+      </a>
     </div>
     <div class="card">
       <span>ATORES</span>
@@ -19,7 +21,4 @@
   </div>
 </div>
 
-<app-movie></app-movie> -->
-
-<app-movie-description></app-movie-description>
-
+<app-movie></app-movie>

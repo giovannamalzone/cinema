@@ -65,28 +65,27 @@
 
 .left {
   width: 65%;
-  background: green;
+  //background: green;
   margin-left: 20px;
   margin-top: 0px;
 }
 
 .right {
   width: 35%;
-  background: rgb(128, 0, 117);
-
+  //background: rgb(128, 0, 117);
 }
 
 .container {
-  height: 100%;
+ // height: 100%;
   text-align: center;
   margin: 20px;
-  margin-top: 70px;
-  height: 850px;
+  //margin-top: 70px;
+  height: 650px;
 }
 
 .imageMovie {
   margin-top: 20px;
-  width:85%;
+  width: 75%;
 }
 
 .movieDescription {
@@ -107,7 +106,7 @@ span {
   margin-left: 5px;
 }
 
-.rowPrincipal{
+.rowPrincipal {
   display: flex;
   align-items: center;
   justify-content: start;
@@ -115,16 +114,42 @@ span {
   margin-top: 20px;
 }
 
-.row{
+.row {
   display: flex;
   align-items: center;
   padding-right: 25px;
 }
 
-.artistImage{
- width: 10%;
- padding-right: 10px;
- padding-bottom: 10px;
+.artistImage {
+  width: 145px;
+  padding-bottom: 13px;
+  padding-right: 15px;
 }
 
+.cast {
+  justify-content: flex-start;
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
 
+.blocHorizontal {
+  display: flex;
+  flex-direction: row;
+  width: 400vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+  margin-bottom: 20px;
+}
+
+.containerr {
+  width: 100vh;
+  height: 59vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

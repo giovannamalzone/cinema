@@ -27,13 +27,21 @@ export class MoviesService {
     return this.http.get<any>(this.url + 'movie/upcoming?api_key=' + this.api_key);
   }
 
-  getMovieDescription(): Observable<any> {
-    return this.http.get<any>(this.url + 'movie/upcoming?api_key=' + this.api_key);
+  getMovieDetail(data:any): Observable<any> {
+    return this.http.get(this.url + 'movie/' + data + '?api_key=' + this.api_key);
   }
 
   getSearchMovie(data:any): Observable<any> {
     console.log(data, 'movie#');
     return this.http.get<any>(this.url + 'search/movie?api_key=' + this.api_key + '&query=' + data.movieName);
+  }
+
+  getGenreMovie(): Observable<any> {
+    return this.http.get<any>(this.url + "genre/movie/list?api_key=" + this.api_key);
+  }
+
+  getMovieCast(data: any): Observable<any> {
+    return this.http.get(this.url + 'movie/' + data + "/credits?api_key=" + this.api_key);
   }
 
 }

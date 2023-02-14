@@ -8,6 +8,7 @@
         alt=""
         width="3.5%"
         class="moviesAlign"
+        [routerLink]="['/movie', popularMovie.id]"
       />
     </ng-container>
   </div>
@@ -23,7 +24,7 @@
           src="http://image.tmdb.org/t/p/original{{topMovie.poster_path}}?api_key=9a441632bef8878cfc1db25ff66aa809"
           width="3.5%"
           class="moviesAlign"
-
+          [routerLink]="['/movie', topMovie.id]"
         />
       </ng-container>
     </div>
@@ -35,15 +36,17 @@
   <div class="container">
     <div class="blocHorizontal">
       <ng-container *ngFor="let nextMovie of nextMovies">
-        <img
+          <img
           src="http://image.tmdb.org/t/p/original{{nextMovie.poster_path}}?api_key=9a441632bef8878cfc1db25ff66aa809"
           alt=""
           width="3.5%"
           class="moviesAlign"
+          [routerLink]="['/movie', nextMovie.id]"
         />
       </ng-container>
     </div>
   </div>
 </div>
+
 
 

@@ -7,10 +7,11 @@
       class="inputSearch"
       style="background-color: white"
       formControlName="movieName"
+      routerLink="/result-search"
     />
   </form>
 
-  <div *ngFor="let searchResult of searchResults">
+  <div *ngFor="let searchResult of searchResults" >
     <img
       src="http://image.tmdb.org/t/p/original{{
         searchResult.poster_path
