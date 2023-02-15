@@ -1,16 +1,10 @@
-<div class="container">
+<div class="container" [routerLink]="['/movie', playingMovie.id]">
   <div class="content">
     <div class="description">
       <div class="movieTitle">
-        007
+        {{ playingMovie.original_title }}
       </div>
-      <div class="descriptionMovie">
-        Ação | 1h20
-      </div>
+      <!-- <div class="descriptionMovie">Ação | 1h20</div> -->
     </div>
   </div>
-
 </div>
-
-
-

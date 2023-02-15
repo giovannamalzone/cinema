@@ -1,4 +1,4 @@
-<div>
+
   <form [formGroup]="searchForm" (ngSubmit)="submitForm()">
     <input
       type="text"
@@ -11,11 +11,15 @@
     />
   </form>
 
-  <div *ngFor="let searchResult of searchResults" >
-    <img
-      src="http://image.tmdb.org/t/p/original{{
-        searchResult.poster_path
-      }}?api_key=9a441632bef8878cfc1db25ff66aa809"
-    />
+  <div class="wrapper">
+    <div *ngFor="let searchResult of searchResults" >
+      <img
+        src="http://image.tmdb.org/t/p/original{{
+          searchResult.poster_path
+        }}?api_key=9a441632bef8878cfc1db25ff66aa809"
+        width="260px"
+        height="420px"
+        [routerLink]="['/movie', searchResult.id]"
+      />
+    </div>
   </div>
-</div>

@@ -11,8 +11,8 @@ export class MoviesService {
 
   constructor(private http: HttpClient) {}
 
-  getLatestMovies(): Observable<any> {
-    return this.http.get<any>(this.url + 'movie/latest?api_key=' + this.api_key);
+  getPlayingMovies(): Observable<any> {
+    return this.http.get<any>(this.url + 'movie/772071?api_key=' + this.api_key);
   }
 
   getPopularMovies(): Observable<any> {

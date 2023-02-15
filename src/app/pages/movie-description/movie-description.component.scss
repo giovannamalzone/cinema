@@ -40,7 +40,7 @@
   background-color: rgb(13, 7, 69);
   height: 20px;
   width: 150px;
-  margin: 8px;
+  //margin: 8px;
   padding: 16px;
   display: flex;
   flex-direction: row;
@@ -57,10 +57,6 @@
 .card-container .card:not(.highlight-card):hover {
   transform: translateY(-3px);
   box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
-}
-
-.column {
-  float: left;
 }
 
 .left {
@@ -118,6 +114,13 @@ span {
   display: flex;
   align-items: center;
   padding-right: 25px;
+  margin-top: 80px;
+}
+
+.rowSub {
+  display: flex;
+  align-items: center;
+  padding-right: 25px;
 }
 
 .artistImage {
@@ -132,6 +135,10 @@ span {
   align-content: flex-start;
   flex-wrap: wrap;
 }
+
+// .castt{
+
+// }
 
 .blocHorizontal {
   display: flex;

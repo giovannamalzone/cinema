@@ -9,17 +9,20 @@ import { MoviesService } from 'src/app/services/movies.service';
   styleUrls: ['./inicial-movie.component.scss'],
 })
 export class InicialMovieComponent {
-  latestMovies: Array<any> = new Array();
+  playingMovie: any;
 
   constructor(private moviesService: MoviesService) {}
 
   ngOnInit() {
-    this.getLatestMovies();
+    this.getPlayingMovies();
   }
 
-  getLatestMovies() {
-    this.moviesService.getLatestMovies().subscribe((result) => {
-      this.latestMovies = result.results;
+  getPlayingMovies() {
+    this.moviesService.getPlayingMovies().subscribe((result) => {
+      this.playingMovie = result;
     });
+    console.log(this.playingMovie);
   }
+
+
 }
